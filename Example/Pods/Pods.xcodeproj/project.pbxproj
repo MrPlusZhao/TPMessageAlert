@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09201521F0AD04961CD8C1C9F326AE86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		0FBD7E4F24ECC11E00573251 /* TPMessageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD7E4D24ECC11E00573251 /* TPMessageAlert.m */; };
-		0FBD7E5024ECC11E00573251 /* TPMessageAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBD7E4E24ECC11E00573251 /* TPMessageAlert.h */; };
+		0FBD7E5724ECCD1F00573251 /* TPMessageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD7E5524ECCD1E00573251 /* TPMessageAlert.m */; };
+		0FBD7E5824ECCD1F00573251 /* TPMessageAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBD7E5624ECCD1E00573251 /* TPMessageAlert.h */; };
 		28C3A07010F5DDFD8AE35468494019C6 /* Pods-TPMessageAlert_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0655A3435E62CFA0DABDF06929D2F6F7 /* Pods-TPMessageAlert_Example-dummy.m */; };
 		2B88CD1690F236274F50E4C934729C1F /* Pods-TPMessageAlert_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 789B6D3685C62B5713F527CAE626888F /* Pods-TPMessageAlert_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AA5E625AFDCA449E955E2F4421B61D7 /* TPMessageAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB547E03FC4E0168AD81BC46359F519 /* TPMessageAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,8 +39,8 @@
 
 /* Begin PBXFileReference section */
 		0655A3435E62CFA0DABDF06929D2F6F7 /* Pods-TPMessageAlert_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPMessageAlert_Example-dummy.m"; sourceTree = "<group>"; };
-		0FBD7E4D24ECC11E00573251 /* TPMessageAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPMessageAlert.m; sourceTree = "<group>"; };
-		0FBD7E4E24ECC11E00573251 /* TPMessageAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPMessageAlert.h; sourceTree = "<group>"; };
+		0FBD7E5524ECCD1E00573251 /* TPMessageAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPMessageAlert.m; path = TPMessageAlert/Classes/TPMessageAlert.m; sourceTree = "<group>"; };
+		0FBD7E5624ECCD1E00573251 /* TPMessageAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPMessageAlert.h; path = TPMessageAlert/Classes/TPMessageAlert.h; sourceTree = "<group>"; };
 		11B5E3173B9FBC98A4C3133D6515FF1B /* TPMessageAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPMessageAlert-prefix.pch"; sourceTree = "<group>"; };
 		1506A75904807A483F3E5B327907F22D /* TPMessageAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPMessageAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		187C7C506F4740D397BBB32A3AD16848 /* Pods-TPMessageAlert_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPMessageAlert_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -163,8 +163,8 @@
 		AA1BDB6EB79F37274ECC7F8C7FFAF29E /* TPMessageAlert */ = {
 			isa = PBXGroup;
 			children = (
-				0FBD7E4E24ECC11E00573251 /* TPMessageAlert.h */,
-				0FBD7E4D24ECC11E00573251 /* TPMessageAlert.m */,
+				0FBD7E5624ECCD1E00573251 /* TPMessageAlert.h */,
+				0FBD7E5524ECCD1E00573251 /* TPMessageAlert.m */,
 				4C847F9B9EE25B1372E3BEB828492E81 /* Pod */,
 				29CB948E7DDAF892ABC6123E291DEE20 /* Support Files */,
 			);
@@ -250,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5F5E9575658FFEF7FCB7F3A8DA5F2B3 /* Pods-TPMessageAlert_Example-umbrella.h in Headers */,
-				0FBD7E5024ECC11E00573251 /* TPMessageAlert.h in Headers */,
+				0FBD7E5824ECCD1F00573251 /* TPMessageAlert.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBD7E4F24ECC11E00573251 /* TPMessageAlert.m in Sources */,
+				0FBD7E5724ECCD1F00573251 /* TPMessageAlert.m in Sources */,
 				28C3A07010F5DDFD8AE35468494019C6 /* Pods-TPMessageAlert_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

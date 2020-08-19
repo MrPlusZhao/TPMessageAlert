@@ -41,10 +41,10 @@
 - (void)btn2Action
 {
     [TPMessageAlert showTitle:@"标题" DetailMsg:@"副标题" LeftItem:@"确定" RightItem:@"取消" Subview:self LeftAction:^{
-           NSLog(@"确定");
-       } RightAction:^{
-           NSLog(@"取消");
-       }];
+        NSLog(@"确定");
+    } RightAction:^{
+        NSLog(@"取消");
+    }];
 }
 
 @end

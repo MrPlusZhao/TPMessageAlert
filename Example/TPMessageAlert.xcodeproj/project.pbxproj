@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FBD7E5424ECC5EE00573251 /* TPMessageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD7E5324ECC5EE00573251 /* TPMessageAlert.m */; };
+		0FBD7E5E24ECCE7F00573251 /* TPMessageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD7E5C24ECCE7E00573251 /* TPMessageAlert.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FBD7E5224ECC5EE00573251 /* TPMessageAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPMessageAlert.h; path = ../../TPMessageAlert.h; sourceTree = "<group>"; };
-		0FBD7E5324ECC5EE00573251 /* TPMessageAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPMessageAlert.m; path = ../../TPMessageAlert.m; sourceTree = "<group>"; };
+		0FBD7E5B24ECCE7E00573251 /* TPMessageAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPMessageAlert.h; sourceTree = "<group>"; };
+		0FBD7E5C24ECCE7E00573251 /* TPMessageAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPMessageAlert.m; sourceTree = "<group>"; };
 		2D5649C0F7988FA8F9142BBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TPMessageAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPMessageAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,13 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FBD7E5124ECC5E400573251 /* TPMessageAlert */ = {
+		0FBD7E5924ECCE7E00573251 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0FBD7E5224ECC5EE00573251 /* TPMessageAlert.h */,
-				0FBD7E5324ECC5EE00573251 /* TPMessageAlert.m */,
+				0FBD7E5B24ECCE7E00573251 /* TPMessageAlert.h */,
+				0FBD7E5C24ECCE7E00573251 /* TPMessageAlert.m */,
 			);
-			name = TPMessageAlert;
+			name = Classes;
+			path = ../../TPMessageAlert/Classes;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -144,7 +145,7 @@
 		6003F593195388D20070C39A /* Example for TPMessageAlert */ = {
 			isa = PBXGroup;
 			children = (
-				0FBD7E5124ECC5E400573251 /* TPMessageAlert */,
+				0FBD7E5924ECCE7E00573251 /* Classes */,
 				6003F59C195388D20070C39A /* TPAppDelegate.h */,
 				6003F59D195388D20070C39A /* TPAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -260,7 +261,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = zhaotianpeng;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 69879D3DC4;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 69879D3DC4;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -377,7 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBD7E5424ECC5EE00573251 /* TPMessageAlert.m in Sources */,
+				0FBD7E5E24ECCE7F00573251 /* TPMessageAlert.m in Sources */,
 				6003F59E195388D20070C39A /* TPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -463,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -508,9 +513,11 @@
 			baseConfigurationReference = D7DED8B5F142D80DD8245047 /* Pods-TPMessageAlert_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 69879D3DC4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TPMessageAlert/TPMessageAlert-Prefix.pch";
 				INFOPLIST_FILE = "TPMessageAlert/TPMessageAlert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,9 +531,11 @@
 			baseConfigurationReference = D0568DF1278E082D6EC52E1F /* Pods-TPMessageAlert_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 69879D3DC4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TPMessageAlert/TPMessageAlert-Prefix.pch";
 				INFOPLIST_FILE = "TPMessageAlert/TPMessageAlert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -540,6 +549,7 @@
 			baseConfigurationReference = 9C80CAE39637656233447A9C /* Pods-TPMessageAlert_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 69879D3DC4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -565,6 +575,7 @@
 			baseConfigurationReference = F6B47796D0F04F3768FF9B2F /* Pods-TPMessageAlert_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 69879D3DC4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

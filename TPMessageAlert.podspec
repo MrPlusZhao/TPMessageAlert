@@ -25,12 +25,12 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'MrPlusZhao' => '553109969@qq.com' }
-  s.source           = { :git => 'https://github.com/zhaotianpeng/TPMessageAlert.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MrPlusZhao/TPMessageAlert.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TPMessageAlert/*.{h,m}'
+  s.source_files = 'TPMessageAlert/Classes/*.{h,m}'
   
   # s.resource_bundles = {
   #   'TPMessageAlert' => ['TPMessageAlert/Assets/*.png']

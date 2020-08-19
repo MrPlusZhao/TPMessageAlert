@@ -1,10 +1,5 @@
 # TPMessageAlert
 
-[![CI Status](https://img.shields.io/travis/zhaotianpeng/TPMessageAlert.svg?style=flat)](1.0.0)  
-[![Version](https://img.shields.io/cocoapods/v/TPMessageAlert.svg?style=flat)](https://cocoapods.org/pods/TPMessageAlert)
-[![License](https://img.shields.io/cocoapods/l/TPMessageAlert.svg?style=flat)](https://cocoapods.org/pods/TPMessageAlert)
-[![Platform](https://img.shields.io/cocoapods/p/TPMessageAlert.svg?style=flat)](https://cocoapods.org/pods/TPMessageAlert)
-
 TPMessageAlert 根据系统的弹窗进行封装, 使用简单
 
 ## Example
