@@ -1,6 +1,6 @@
 # TPMessageAlert
 
-[![CI Status](https://img.shields.io/travis/zhaotianpeng/TPMessageAlert.svg?style=flat)](https://travis-ci.org/zhaotianpeng/TPMessageAlert) 1.0.0 
+[![CI Status](https://img.shields.io/travis/zhaotianpeng/TPMessageAlert.svg?style=flat)](1.0.0)  
 [![Version](https://img.shields.io/cocoapods/v/TPMessageAlert.svg?style=flat)](https://cocoapods.org/pods/TPMessageAlert)
 [![License](https://img.shields.io/cocoapods/l/TPMessageAlert.svg?style=flat)](https://cocoapods.org/pods/TPMessageAlert)
 [![Platform](https://img.shields.io/cocoapods/p/TPMessageAlert.svg?style=flat)](https://cocoapods.org/pods/TPMessageAlert)
