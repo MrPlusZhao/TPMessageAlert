@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'TPMessageAlert_Example' do
+  pod 'TPMessageAlert', :path => '../'
+
+  target 'TPMessageAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module TPMessageAlert {
+  umbrella header "TPMessageAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

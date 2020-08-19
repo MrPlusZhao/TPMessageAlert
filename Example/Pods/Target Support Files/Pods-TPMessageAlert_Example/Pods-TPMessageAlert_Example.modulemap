@@ -1,0 +1,6 @@
+framework module Pods_TPMessageAlert_Example {
+  umbrella header "Pods-TPMessageAlert_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
