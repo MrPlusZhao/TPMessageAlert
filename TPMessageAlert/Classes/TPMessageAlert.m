@@ -22,18 +22,16 @@
         DetailMsg:(NSString * _Nullable )detailStr
          LeftItem:(NSString * _Nullable )leftStr
         RightItem:(NSString * _Nullable )rightStr
-          Subview:(_Nonnull id)view
        LeftAction:(_Nullable dispatch_block_t)leftAction
       RightAction:(_Nullable dispatch_block_t)rightAction{
     
     TPMessageAlert *alert = [[TPMessageAlert alloc]init];
-    [alert initTitle:msg DetailMsg:detailStr LeftItem:leftStr RightItem:rightStr Subview:view LeftAction:leftAction RightAction:rightAction];
+    [alert initTitle:msg DetailMsg:detailStr LeftItem:leftStr RightItem:rightStr LeftAction:leftAction RightAction:rightAction];
 }
 - (void)initTitle:(NSString*)title
         DetailMsg:(NSString *)detailStr
          LeftItem:(NSString *)leftStr
         RightItem:(NSString *)rightStr
-          Subview:(id)view
        LeftAction:(dispatch_block_t)leftAction
       RightAction:(dispatch_block_t)rightAction{
     if (leftAction) {
@@ -58,7 +56,7 @@
     }
     
     if (iOS9Later) {
-        [self AlertControllerCreateForTPShowMessage:title DetailMsg:detailStr LeftItem:leftStr RightItem:rightStr VC:view];
+        [self AlertControllerCreateForTPShowMessage:title DetailMsg:detailStr LeftItem:leftStr RightItem:rightStr];
     }
     else
     {
@@ -97,21 +95,10 @@
                                     DetailMsg:(NSString *)detailStr
                                      LeftItem:(NSString *)leftStr
                                     RightItem:(NSString *)rightStr
-                                           VC:(id)view
 {
-    UIViewController *VC;
-    if ([view isKindOfClass:[UIViewController class]]) {
-        VC = (UIViewController*)view;
-    }
-    else if ([[view superclass] isEqual:[UIView class]]) {
-        VC = [TPMessageAlert FatherViewControllerFromView:view];
-        if (!VC) {
-            NSLog(@"传入的类型错误");
-            return;
-        }
-    }
-    else{
-        NSLog(@"传入的类型错误");
+    UIViewController *VC = [UIApplication sharedApplication].keyWindow.rootViewController;
+    if (!VC || ![VC isKindOfClass:[UIViewController class]]) {
+        NSLog(@"类型错误");
         return;
     }
     UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:msg message:detailStr preferredStyle:UIAlertControllerStyleAlert];
@@ -134,16 +121,5 @@
         
     }
     [VC presentViewController:alertVC animated:YES completion:nil];
-}
-+ (UIViewController *)FatherViewControllerFromView:(UIView*)view
-{
-    UIView *next = view;
-    while ((next = [next superview])) {
-        UIResponder *nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController *)nextResponder;
-        }
-    }
-    return nil;
 }
 @end

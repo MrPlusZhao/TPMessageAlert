@@ -33,14 +33,14 @@
 
 - (void)btn1Action
 {
-    [TPMessageAlert showTitle:@"标题" DetailMsg:@"副标题" LeftItem:@"确定" RightItem:nil Subview:self LeftAction:^{
+    [TPMessageAlert showTitle:@"标题" DetailMsg:@"副标题" LeftItem:@"确定" RightItem:nil LeftAction:^{
         NSLog(@"确定");
     } RightAction:nil];
 }
 
 - (void)btn2Action
 {
-    [TPMessageAlert showTitle:@"标题" DetailMsg:@"副标题" LeftItem:@"确定" RightItem:@"取消" Subview:self LeftAction:^{
+    [TPMessageAlert showTitle:@"标题" DetailMsg:@"副标题" LeftItem:@"确定" RightItem:@"取消" LeftAction:^{
         NSLog(@"确定");
     } RightAction:^{
         NSLog(@"取消");
